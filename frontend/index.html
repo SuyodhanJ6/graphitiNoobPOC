@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noob 143</title>
+    <link rel="stylesheet" href="https://unpkg.com/98.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="icon" type="image/x-icon" href="static/img/favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <!-- About Window -->
+        <div class="window about-window" data-window="about">
+            <div class="title-bar">
+                <img src="static/img/computer_icon.jpg" alt="Computer" class="window-icon">
+                <div class="title-bar-text">About Noob 143</div>
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize"></button>
+                    <button aria-label="Maximize"></button>
+                    <button aria-label="Close"></button>
+                </div>
+            </div>
+            <div class="window-body">
+                <div class="about-content">
+                    <img src="static/img/computer_icon.jpg" alt="Logo" class="about-logo">
+                    <p class="about-text">Welcome to Noob 143! 🚀</p>
+                    <p>Your friendly neighborhood AI assistant with a retro twist.</p>
+                    <hr class="divider">
+                    <ul class="feature-list">
+                        <li>🤖 Powered by cutting-edge AI</li>
+                        <li>💾 Stores conversation history</li>
+                        <li>🎮 Retro-style interface</li>
+                        <li>⚡ Fast and reliable responses</li>
+                    </ul>
+                    <div class="status-bar">
+                        <p>System Status: Online | Memory: OK | CPU: 133MHz</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Chat Window -->
+        <div class="window main-window" data-window="main">
+            <div class="title-bar">
+                <img src="static/img/computer_icon.jpg" alt="Computer" class="window-icon">
+                <div class="title-bar-text">Noob 143</div>
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize"></button>
+                    <button aria-label="Maximize"></button>
+                    <button aria-label="Close"></button>
+                </div>
+            </div>
+            <div class="window-body">
+                <div class="toolbar">
+                    <button class="toolbar-btn">File</button>
+                    <button class="toolbar-btn">Edit</button>
+                    <button class="toolbar-btn">Help</button>
+                </div>
+                <!-- Chat Output -->
+                <div id="chatOutput" class="chat-output"></div>
+                
+                <!-- Input Area -->
+                <div class="input-area">
+                    <input type="text" id="userInput" placeholder="Type your message here... (Press Enter to send)">
+                    <div class="button-group">
+                        <button id="sendBtn">Send Message</button>
+                        <button id="clearBtn">Clear Chat</button>
+                    </div>
+                </div>
+                <div class="status-bar">
+                    <p>Ready | Connected to AI | Memory Usage: 640K</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="static/js/window-controls.js"></script>
+    <script src="static/js/app.js"></script>
+</body>
+</html> 
