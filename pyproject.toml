@@ -1,0 +1,50 @@
+[project]
+name = "graphitinoobpoc"
+version = "0.1.0"
+description = "A document processing and knowledge graph API using LLMs and Graphiti"
+authors = [
+    {name = "Prashant Malge", email = "prashantmalge181@gmail.com"},
+]
+maintainers = [
+    {name = "Prashant Malge", email = "prashantmalge181@gmail.com"},
+]
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+keywords = ["graphiti", "knowledge-graph", "document-processing", "llm", "fastapi"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+]
+
+dependencies = [
+    "fastapi>=0.115.12",
+    "graphiti-core>=0.11.5",
+    "langchain>=0.3.25",
+    "langchain-community>=0.3.24",
+    "langchain-mcp-adapters>=0.0.11",
+    "langchain-openai>=0.3.16",
+    "langgraph>=0.4.3",
+    "markitdown-mcp>=0.0.1a3",
+    "markitdown[all]>=0.1.1",
+    "neo4j>=5.28.1",
+    "notebook>=7.4.2",
+    "python-dotenv>=1.1.0",
+    "python-multipart>=0.0.20",
+    "tavily-python>=0.7.2",
+    "uvicorn>=0.34.2",
+]
+
+[project.urls]
+Documentation = "https://github.com/prashant-malge/graphitinoobpoc#readme"
+Source = "https://github.com/prashant-malge/graphitinoobpoc"
+Issues = "https://github.com/prashant-malge/graphitinoobpoc/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
